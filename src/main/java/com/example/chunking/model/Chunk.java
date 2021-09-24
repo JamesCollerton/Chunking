@@ -23,6 +23,7 @@ public class Chunk {
 
   private String chunkName;
 
+  @Column(columnDefinition = "VARBINARY(MAX)")
   private byte[] chunkBytes;
 
   public static Chunk fromDto(ChunkDto chunkDto) {
